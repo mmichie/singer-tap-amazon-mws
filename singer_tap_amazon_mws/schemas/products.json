@@ -20,7 +20,21 @@
             ],
             "properties": {
                 "AttributeSets": {},
-                "Identifiers": {},
+                "Identifiers": {
+                    "MarketplaceASIN": {
+                        "MarketplaceId": {
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        "ASIN": {
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        }
+                },
                 "Relationships": {},
                 "SalesRankings": {}
             }
