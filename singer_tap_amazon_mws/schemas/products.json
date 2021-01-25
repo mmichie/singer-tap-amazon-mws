@@ -1,14 +1,23 @@
 {
     "type": "object",
     "properties": {
-        "id": {
-            "type": "string"
+       "id": {
+            "type": [
+                "null",
+                "string"
+            ]
         },
         "IdType": {
-            "type": "string"
+            "type": [
+                "null",
+                "string"
+            ]
         },
         "Product": {
-            "type": "object",
+            "type":  [
+                "null",
+                "object"
+            ],
             "properties": {
                 "AttributeSets": {},
                 "Identifiers": {},
@@ -18,4 +27,3 @@
         }
     }
 }
-
