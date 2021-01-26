@@ -36,7 +36,8 @@ class ProductStream(InventoryIterationStream):
             "Product": {
                 'MarketplaceId': pluck(r, ['Product', 'Identifiers', 'MarketplaceASIN', 'MarketplaceId', 'value']),
                 'ASIN': pluck(r, ['Product', 'Identifiers', 'MarketplaceASIN', 'ASIN', 'value']),
-            },
+                'Binding': pluck(r, ['Product', 'AttributeSets', 'Binding','value']),
+            }
         }
 
     def get_stream_data(self, result):
