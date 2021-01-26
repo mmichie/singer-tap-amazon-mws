@@ -25,12 +25,12 @@
                     "AttributeSets": {
                         "type": "object",
                         "properties": {
-                        "ItemAttributes": {
-                            "type" : "string"
-                        },
-                        "Binding": {
-                            "type": "string"
-                        }
+                            "ItemAttributes": {
+                                "type" : "string"
+                            },
+                            "Binding": {
+                                "type": "string"
+                            }
                         }
                     },
                     "Identifiers": {
