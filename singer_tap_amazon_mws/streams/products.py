@@ -34,7 +34,7 @@ class ProductStream(InventoryIterationStream):
 
              # Structs
             "Product": {
-                'MarketplaceId': pluck(r, ['Product',' Identifiers', 'MarketplaceASIN', 'MarketplaceId', 'value']),
+                'MarketplaceId': pluck(r, ['Product', 'Identifiers', 'MarketplaceASIN', 'MarketplaceId', 'value']),
                 'ASIN': pluck(r, ['Product', 'Identifiers', 'MarketplaceASIN', 'ASIN', 'value']),
             },
         }

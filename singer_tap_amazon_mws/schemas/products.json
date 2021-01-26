@@ -19,14 +19,30 @@
                 "object"
             ],
             "properties": {
-                "AttributeSets": {},
+                "AttributeSets": {
+                    "type": "object",
+                    "properties": {
+                      "ItemAttributes": {
+                          "type" : "string"
+                       },
+                       "Binding": {
+                           "type": "string"
+                       }
+                    }
+                },
                 "Identifiers": {
-                    "MarketplaceASIN": {
-                        "MarketplaceId": {
-                            "type": [
-                                "null",
-                                "string"
-                            ]
+                    "type": "object",
+                    "properties": {
+                        "MarketplaceASIN": {
+                            "type": "object",
+                            "properties": {
+                                "MarketplaceId": {
+                                    "type": [
+                                        "null",
+                                        "string"
+                                     ]
+                                }
+                            }
                         },
                         "ASIN": {
                             "type": [
