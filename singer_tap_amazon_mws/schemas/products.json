@@ -13,44 +13,49 @@
                 "string"
             ]
         },
-        "Product": {
-            "type":  [
-                "null",
-                "object"
-            ],
+        "Products": {
+            "type": "object",
             "properties": {
-                "AttributeSets": {
-                    "type": "object",
-                    "properties": {
-                      "ItemAttributes": {
-                          "type" : "string"
-                       },
-                       "Binding": {
-                           "type": "string"
-                       }
-                    }
-                },
-                "Identifiers": {
-                    "type": "object",
-                    "properties": {
-                        "MarketplaceASIN": {
-                            "type": "object",
-                            "properties": {
-                                "MarketplaceId": {
-                                    "type": [
-                                        "null",
-                                        "string"
-                                     ]
-                                }
-                            }
+            "Product": {
+                "type":  [
+                    "null",
+                    "object"
+                ],
+                "properties": {
+                    "AttributeSets": {
+                        "type": "object",
+                        "properties": {
+                        "ItemAttributes": {
+                            "type" : "string"
                         },
-                        "ASIN": {
-                            "type": [
-                                "null",
-                                "string"
-                            ]
+                        "Binding": {
+                            "type": "string"
+                        }
+                        }
+                    },
+                    "Identifiers": {
+                        "type": "object",
+                        "properties": {
+                            "MarketplaceASIN": {
+                                "type": "object",
+                                "properties": {
+                                    "MarketplaceId": {
+                                        "type": [
+                                            "null",
+                                            "string"
+                                        ]
+                                    }
+                                }
+                            },
+                            "ASIN": {
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
+                            }
                         }
                     }
+                  }
                 },
                 "Relationships": {},
                 "SalesRankings": {}

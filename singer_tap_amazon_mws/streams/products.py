@@ -28,6 +28,49 @@ class ProductStream(InventoryIterationStream):
 
     def parse_product(self, r):
         LOGGER.info(r)
+        """
+{ 'Id': {'value': 'GG-LVADSM'},
+  'IdType': {'value': 'SellerSKU'},
+  'Products': { 'Product': { 'AttributeSets': { 'ItemAttributes': { 'Binding': { 'value': 'Health ' 'and ' 'Beauty'},
+                                                                    'Brand': { 'value': 'Genki ' 'Garb'},
+                                                                    'Color': { 'value': 'Black'},
+                                                                    'Department': { 'value': 'mens'},
+                                                                    'IsAdultProduct': { 'value': 'false'},
+                                                                    'Label': { 'value': 'Genki ' 'Garb'},
+                                                                    'Manufacturer': { 'value': 'Genki ' 'Garb'},
+                                                                    'MaterialType': [ { 'value': 'nylon'},
+                                                                                      { 'value': 'polyester'}],
+                                                                    'PackageDimensions': { 'Height': { 'Units': { 'value': 'inches'},
+                                                                                                       'value': '1.00'},
+                                                                                           'Length': { 'Units': { 'value': 'inches'},
+                                                                                                       'value': '8.00'},
+                                                                                           'Weight': { 'Units': { 'value': 'pounds'},
+                                                                                                       'value': '0.5070632026000'},
+                                                                                           'Width': { 'Units': { 'value': 'inches'},
+                                                                                                      'value': '6.00'}},
+                                                                    'ProductGroup': { 'value': 'Health ' 'and ' 'Beauty'},
+                                                                    'ProductTypeName': { 'value': 'HEALTH_PERSONAL_CARE'},
+                                                                    'Publisher': { 'value': 'Genki ' 'Garb'},
+                                                                    'Size': { 'value': 'Small'},
+                                                                    'SmallImage': { 'Height': { 'Units': { 'value': 'pixels'}, 'value': '75'},
+                                                                                    'URL': { 'value': 'https://m.media-amazon.com/images/I/31DX4skj9ZL._SL75_.jpg'},
+                                                                                    'Width': { 'Units': { 'value': 'pixels'},
+                                                                                               'value': '75'}},
+                                                                    'Studio': { 'value': 'Genki ' 'Garb'},
+                                                                    'Title': { 'value': 'Genki ' 'Garb ' 'LVAD ' 'Medical ' 'Shirt ' 'SM'},
+                                                                    'lang': { 'value': 'en-US'}}},
+                             'Identifiers': { 'MarketplaceASIN': { 'ASIN': { 'value': 'B089Y6QQ4L'},
+                                                                   'MarketplaceId': { 'value': 'ATVPDKIKX0DER'}}},
+                             'Relationships': { 'VariationParent': { 'Identifiers': { 'MarketplaceASIN': { 'ASIN': { 'value': 'B089Y1YHPJ'},
+                                                                                                           'MarketplaceId': { 'value': 'ATVPDKIKX0DER'}}}}},
+                             'SalesRankings': { 'SalesRank': [ { 'ProductCategoryId': { 'value': 'fashion_display_on_website'},
+                                                                 'Rank': { 'value': '230072'}},
+                                                               { 'ProductCategoryId': { 'value': '9056987011'},
+                                                                 'Rank': { 'value': '8458'}},
+                                                               { 'ProductCategoryId': { 'value': '7581669011'},
+                                                                 'Rank': { 'value': '62079'}}]}}},
+  'status': {'value': 'Success'}}
+        """
         return {
             # Ids
             'id': pluck(r, ['Id', 'value']),
@@ -36,8 +79,8 @@ class ProductStream(InventoryIterationStream):
              # Structs
             "Product": {
                 'MarketplaceId': pluck(r, ['Product', 'Identifiers', 'MarketplaceASIN', 'MarketplaceId', 'value']),
-                'ASIN': pluck(r, ['Product', 'Identifiers', 'MarketplaceASIN', 'ASIN', 'value']),
-                'Binding': pluck(r, ['Product', 'AttributeSets', 'Binding', 'value']),
+                'ASIN': pluck(r, ['Products', 'Product', 'Identifiers', 'MarketplaceASIN', 'ASIN', 'value']),
+                'Binding': pluck(r, ['Products', 'Product', 'AttributeSets', 'ItemAttributes', 'Binding', 'value']),
             }
         }
 
