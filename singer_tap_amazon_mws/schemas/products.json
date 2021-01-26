@@ -26,10 +26,16 @@
                         "type": "object",
                         "properties": {
                             "ItemAttributes": {
-                                "type" : "string"
+                                "type" : [
+                                    "null",
+                                    "string"
+                                ]
                             },
                             "Binding": {
-                                "type": "string"
+                                "type": [
+                                    "null",
+                                    "string"
+                                ]
                             }
                         }
                     },
