@@ -31,9 +31,12 @@ class ProductStream(InventoryIterationStream):
             # Ids
             'id': pluck(r, ['Id', 'value']),
             'IdType': pluck(r, ['IdType', 'value']),
-            'MarketplaceId': pluck(r, ['MarketplaceId', 'value']),
-            'ASIN': pluck(r, ['ASIN', 'value']),
-           # 'Product': pluck(r, ['Products', 'Product'])
+
+             # Structs
+            "Product": {
+                'MarketplaceId': pluck(r, ['Identifiers', 'MarketplaceId', 'value']),
+                'ASIN': pluck(r, ['Identifiers', 'ASIN', 'value']),
+            },
         }
 
     def get_stream_data(self, result):
