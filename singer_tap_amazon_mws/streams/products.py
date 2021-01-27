@@ -27,6 +27,9 @@ class ProductStream(InventoryIterationStream):
         }
 
     def parse_product(self, r):
+        import ipdb
+        ipdb.set_trace()
+        LOGGER.info(type(r))
         LOGGER.info(r)
         """
 { 'Id': {'value': 'GG-LVADSM'},
