@@ -13,6 +13,7 @@ setup(name='singer-tap-amazon-mws',
           'tap-framework==0.0.4',
           'mws==0.8.10',
           'ipython',
+          'ipdb',
       ],
       entry_points='''
           [console_scripts]
