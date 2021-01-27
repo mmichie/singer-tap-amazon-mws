@@ -1,71 +1,715 @@
 {
-    "type": "object",
-    "properties": {
-       "id": {
-            "type": [
-                "null",
-                "string"
-            ]
-        },
-        "IdType": {
-            "type": [
-                "null",
-                "string"
-            ]
-        },
-        "Products": {
-            "type": "object",
-            "properties": {
-            "Product": {
-                "type":  [
-                    "null",
-                    "object"
-                ],
-                "properties": {
-                    "AttributeSets": {
-                        "type": "object",
-                        "properties": {
-                            "ItemAttributes": {
-                                "type" : [
-                                    "null",
-                                    "string"
-                                ]
-                            },
-                            "Binding": {
-                                "type": [
-                                    "null",
-                                    "string"
-                                ]
-                            }
-                        }
-                    },
-                    "Identifiers": {
-                        "type": "object",
-                        "properties": {
-                            "MarketplaceASIN": {
-                                "type": "object",
-                                "properties": {
-                                    "MarketplaceId": {
-                                        "type": [
-                                            "null",
-                                            "string"
-                                        ]
-                                    }
-                                }
-                            },
-                            "ASIN": {
-                                "type": [
-                                    "null",
-                                    "string"
-                                ]
-                            }
-                        }
-                    }
-                  }
-                },
-                "Relationships": {},
-                "SalesRankings": {}
-            }
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
         }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "IdType": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "Products": {
+      "type": "object",
+      "properties": {
+        "Product": {
+          "type": "object",
+          "properties": {
+            "Relationships": {
+              "type": "object",
+              "properties": {
+                "VariationParent": {
+                  "type": "object",
+                  "properties": {
+                    "Identifiers": {
+                      "type": "object",
+                      "properties": {
+                        "MarketplaceASIN": {
+                          "type": "object",
+                          "properties": {
+                            "ASIN": {
+                              "type": "object",
+                              "properties": {
+                                "value": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "value"
+                              ]
+                            },
+                            "MarketplaceId": {
+                              "type": "object",
+                              "properties": {
+                                "value": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "value"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "ASIN",
+                            "MarketplaceId"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "MarketplaceASIN"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "Identifiers"
+                  ]
+                }
+              },
+              "required": [
+                "VariationParent"
+              ]
+            },
+            "Identifiers": {
+              "type": "object",
+              "properties": {
+                "MarketplaceASIN": {
+                  "type": "object",
+                  "properties": {
+                    "ASIN": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "value"
+                      ]
+                    },
+                    "MarketplaceId": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "value"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "ASIN",
+                    "MarketplaceId"
+                  ]
+                }
+              },
+              "required": [
+                "MarketplaceASIN"
+              ]
+            },
+            "SalesRankings": {
+              "type": "object",
+              "properties": {
+                "SalesRank": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "ProductCategoryId": {
+                          "type": "object",
+                          "properties": {
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "value"
+                          ]
+                        },
+                        "Rank": {
+                          "type": "object",
+                          "properties": {
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "value"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "ProductCategoryId",
+                        "Rank"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "ProductCategoryId": {
+                          "type": "object",
+                          "properties": {
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "value"
+                          ]
+                        },
+                        "Rank": {
+                          "type": "object",
+                          "properties": {
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "value"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "ProductCategoryId",
+                        "Rank"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "SalesRank"
+              ]
+            },
+            "AttributeSets": {
+              "type": "object",
+              "properties": {
+                "ItemAttributes": {
+                  "type": "object",
+                  "properties": {
+                    "lang": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "value"
+                      ]
+                    },
+                    "HandOrientation": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "value"
+                      ]
+                    },
+                    "IsMemorabilia": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "value"
+                      ]
+                    },
+                    "Color": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "value"
+                      ]
+                    },
+                    "Brand": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "value"
+                      ]
+                    },
+                    "MaterialType": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "value"
+                      ]
+                    },
+                    "Binding": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "value"
+                      ]
+                    },
+                    "Publisher": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "value"
+                      ]
+                    },
+                    "ProductGroup": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "value"
+                      ]
+                    },
+                    "Label": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "value"
+                      ]
+                    },
+                    "IsAutographed": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "value"
+                      ]
+                    },
+                    "PackageQuantity": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "value"
+                      ]
+                    },
+                    "ProductTypeName": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "value"
+                      ]
+                    },
+                    "ItemDimensions": {
+                      "type": "object",
+                      "properties": {
+                        "Width": {
+                          "type": "object",
+                          "properties": {
+                            "Units": {
+                              "type": "object",
+                              "properties": {
+                                "value": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "value"
+                              ]
+                            },
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "Units",
+                            "value"
+                          ]
+                        },
+                        "Length": {
+                          "type": "object",
+                          "properties": {
+                            "Units": {
+                              "type": "object",
+                              "properties": {
+                                "value": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "value"
+                              ]
+                            },
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "Units",
+                            "value"
+                          ]
+                        },
+                        "Height": {
+                          "type": "object",
+                          "properties": {
+                            "Units": {
+                              "type": "object",
+                              "properties": {
+                                "value": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "value"
+                              ]
+                            },
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "Units",
+                            "value"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "Width",
+                        "Length",
+                        "Height"
+                      ]
+                    },
+                    "SmallImage": {
+                      "type": "object",
+                      "properties": {
+                        "URL": {
+                          "type": "object",
+                          "properties": {
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "value"
+                          ]
+                        },
+                        "Width": {
+                          "type": "object",
+                          "properties": {
+                            "Units": {
+                              "type": "object",
+                              "properties": {
+                                "value": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "value"
+                              ]
+                            },
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "Units",
+                            "value"
+                          ]
+                        },
+                        "Height": {
+                          "type": "object",
+                          "properties": {
+                            "Units": {
+                              "type": "object",
+                              "properties": {
+                                "value": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "value"
+                              ]
+                            },
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "Units",
+                            "value"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "URL",
+                        "Width",
+                        "Height"
+                      ]
+                    },
+                    "Title": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "value"
+                      ]
+                    },
+                    "Department": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "value"
+                      ]
+                    },
+                    "Studio": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "value"
+                      ]
+                    },
+                    "Size": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "value"
+                      ]
+                    },
+                    "PackageDimensions": {
+                      "type": "object",
+                      "properties": {
+                        "Width": {
+                          "type": "object",
+                          "properties": {
+                            "Units": {
+                              "type": "object",
+                              "properties": {
+                                "value": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "value"
+                              ]
+                            },
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "Units",
+                            "value"
+                          ]
+                        },
+                        "Length": {
+                          "type": "object",
+                          "properties": {
+                            "Units": {
+                              "type": "object",
+                              "properties": {
+                                "value": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "value"
+                              ]
+                            },
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "Units",
+                            "value"
+                          ]
+                        },
+                        "Weight": {
+                          "type": "object",
+                          "properties": {
+                            "Units": {
+                              "type": "object",
+                              "properties": {
+                                "value": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "value"
+                              ]
+                            },
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "Units",
+                            "value"
+                          ]
+                        },
+                        "Height": {
+                          "type": "object",
+                          "properties": {
+                            "Units": {
+                              "type": "object",
+                              "properties": {
+                                "value": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "value"
+                              ]
+                            },
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "Units",
+                            "value"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "Width",
+                        "Length",
+                        "Weight",
+                        "Height"
+                      ]
+                    },
+                    "Manufacturer": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "value"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "lang",
+                    "HandOrientation",
+                    "IsMemorabilia",
+                    "Color",
+                    "Brand",
+                    "MaterialType",
+                    "Binding",
+                    "Publisher",
+                    "ProductGroup",
+                    "Label",
+                    "IsAutographed",
+                    "PackageQuantity",
+                    "ProductTypeName",
+                    "ItemDimensions",
+                    "SmallImage",
+                    "Title",
+                    "Department",
+                    "Studio",
+                    "Size",
+                    "PackageDimensions",
+                    "Manufacturer"
+                  ]
+                }
+              },
+              "required": [
+                "ItemAttributes"
+              ]
+            }
+          },
+          "required": [
+            "Relationships",
+            "Identifiers",
+            "SalesRankings",
+            "AttributeSets"
+          ]
+        }
+      },
+      "required": [
+        "Product"
+      ]
+    },
+    "Id": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
     }
+  },
+  "required": [
+    "status",
+    "IdType",
+    "Products",
+    "Id"
+  ]
 }
