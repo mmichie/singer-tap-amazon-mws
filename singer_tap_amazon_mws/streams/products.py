@@ -27,8 +27,8 @@ class ProductStream(InventoryIterationStream):
         }
 
     def parse_product(self, r):
-        #import ipdb
-        #ipdb.set_trace()
+        import ipdb
+        ipdb.set_trace()
         result = {
             # Ids
             'id': pluck(r, ['Id', 'value']),
