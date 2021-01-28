@@ -28,17 +28,25 @@ class ProductStream(InventoryIterationStream):
 
     def parse_product(self, r):
         import ipdb
-        ipdb.set_trace()
+        #ipdb.set_trace()
         result = {
             # Ids
             'id': pluck(r, ['Id', 'value']),
             'IdType': pluck(r, ['IdType', 'value']),
 
              # Structs
-            "Product": {
-                'MarketplaceId': pluck(r, ['Products', 'Product', 'Identifiers', 'MarketplaceASIN', 'MarketplaceId', 'value']),
-                'ASIN': pluck(r, ['Products', 'Product', 'Identifiers', 'MarketplaceASIN', 'ASIN', 'value']),
-                'Binding': pluck(r, ['Products', 'Product', 'AttributeSets', 'ItemAttributes', 'Binding', 'value']),
+            "Products": {
+                "Product": {
+                    "Identifiers": {
+                        "MarketplaceASIN": {
+                            "MarketplaceId": {
+                                "MarketplaceId": pluck(r, ['Products', 'Product', 'Identifiers', 'MarketplaceASIN', 'MarketplaceId', 'value']),
+                                "ASIN": pluck(r, ['Products', 'Product', 'Identifiers', 'MarketplaceASIN', 'ASIN', 'value']),
+                             }
+                      }
+                    }
+                }
+                #'Binding': pluck(r, ['Products', 'Product', 'AttributeSets', 'ItemAttributes', 'Binding', 'value']),
             }
         }
         LOGGER.info("returning %s" % result)
