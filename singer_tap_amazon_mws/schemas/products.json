@@ -7,10 +7,7 @@
         "value": {
           "type": "string"
         }
-      },
-      "required": [
-        "value"
-      ]
+      }
     },
     "IdType": {
       "type": "object",
@@ -18,10 +15,7 @@
         "value": {
           "type": "string"
         }
-      },
-      "required": [
-        "value"
-      ]
+      }
     },
     "Products": {
       "type": "object",
@@ -47,10 +41,7 @@
                                 "value": {
                                   "type": "string"
                                 }
-                              },
-                              "required": [
-                                "value"
-                              ]
+                              }
                             },
                             "MarketplaceId": {
                               "type": "object",
@@ -58,31 +49,15 @@
                                 "value": {
                                   "type": "string"
                                 }
-                              },
-                              "required": [
-                                "value"
-                              ]
+                              }
                             }
-                          },
-                          "required": [
-                            "ASIN",
-                            "MarketplaceId"
-                          ]
+                          }
                         }
-                      },
-                      "required": [
-                        "MarketplaceASIN"
-                      ]
+                      }
                     }
-                  },
-                  "required": [
-                    "Identifiers"
-                  ]
+                  }
                 }
-              },
-              "required": [
-                "VariationParent"
-              ]
+              }
             },
             "Identifiers": {
               "type": "object",
@@ -96,10 +71,7 @@
                         "value": {
                           "type": "string"
                         }
-                      },
-                      "required": [
-                        "value"
-                      ]
+                      }
                     },
                     "MarketplaceId": {
                       "type": "object",
@@ -107,21 +79,11 @@
                         "value": {
                           "type": "string"
                         }
-                      },
-                      "required": [
-                        "value"
-                      ]
+                      }
                     }
-                  },
-                  "required": [
-                    "ASIN",
-                    "MarketplaceId"
-                  ]
+                  }
                 }
-              },
-              "required": [
-                "MarketplaceASIN"
-              ]
+              }
             },
             "SalesRankings": {
               "type": "object",
@@ -138,10 +100,7 @@
                             "value": {
                               "type": "string"
                             }
-                          },
-                          "required": [
-                            "value"
-                          ]
+                          }
                         },
                         "Rank": {
                           "type": "object",
@@ -149,16 +108,9 @@
                             "value": {
                               "type": "string"
                             }
-                          },
-                          "required": [
-                            "value"
-                          ]
+                          }
                         }
-                      },
-                      "required": [
-                        "ProductCategoryId",
-                        "Rank"
-                      ]
+                      }
                     },
                     {
                       "type": "object",
@@ -169,10 +121,7 @@
                             "value": {
                               "type": "string"
                             }
-                          },
-                          "required": [
-                            "value"
-                          ]
+                          }
                         },
                         "Rank": {
                           "type": "object",
@@ -180,23 +129,13 @@
                             "value": {
                               "type": "string"
                             }
-                          },
-                          "required": [
-                            "value"
-                          ]
+                          }
                         }
-                      },
-                      "required": [
-                        "ProductCategoryId",
-                        "Rank"
-                      ]
+                      }
                     }
                   ]
                 }
-              },
-              "required": [
-                "SalesRank"
-              ]
+              }
             },
             "AttributeSets": {
               "type": "object",
@@ -210,10 +149,7 @@
                         "value": {
                           "type": "string"
                         }
-                      },
-                      "required": [
-                        "value"
-                      ]
+                      }
                     },
                     "HandOrientation": {
                       "type": "object",
@@ -221,10 +157,7 @@
                         "value": {
                           "type": "string"
                         }
-                      },
-                      "required": [
-                        "value"
-                      ]
+                      }
                     },
                     "IsMemorabilia": {
                       "type": "object",
@@ -232,10 +165,7 @@
                         "value": {
                           "type": "string"
                         }
-                      },
-                      "required": [
-                        "value"
-                      ]
+                      }
                     },
                     "Color": {
                       "type": "object",
@@ -243,10 +173,7 @@
                         "value": {
                           "type": "string"
                         }
-                      },
-                      "required": [
-                        "value"
-                      ]
+                      }
                     },
                     "Brand": {
                       "type": "object",
@@ -254,10 +181,7 @@
                         "value": {
                           "type": "string"
                         }
-                      },
-                      "required": [
-                        "value"
-                      ]
+                      }
                     },
                     "MaterialType": {
                       "type": "object",
@@ -265,10 +189,7 @@
                         "value": {
                           "type": "string"
                         }
-                      },
-                      "required": [
-                        "value"
-                      ]
+                      }
                     },
                     "Binding": {
                       "type": "object",
@@ -276,10 +197,7 @@
                         "value": {
                           "type": "string"
                         }
-                      },
-                      "required": [
-                        "value"
-                      ]
+                      }
                     },
                     "Publisher": {
                       "type": "object",
@@ -287,10 +205,7 @@
                         "value": {
                           "type": "string"
                         }
-                      },
-                      "required": [
-                        "value"
-                      ]
+                      }
                     },
                     "ProductGroup": {
                       "type": "object",
@@ -298,10 +213,7 @@
                         "value": {
                           "type": "string"
                         }
-                      },
-                      "required": [
-                        "value"
-                      ]
+                      }
                     },
                     "Label": {
                       "type": "object",
@@ -309,10 +221,7 @@
                         "value": {
                           "type": "string"
                         }
-                      },
-                      "required": [
-                        "value"
-                      ]
+                      }
                     },
                     "IsAutographed": {
                       "type": "object",
@@ -320,10 +229,7 @@
                         "value": {
                           "type": "string"
                         }
-                      },
-                      "required": [
-                        "value"
-                      ]
+                      }
                     },
                     "PackageQuantity": {
                       "type": "object",
@@ -331,10 +237,7 @@
                         "value": {
                           "type": "string"
                         }
-                      },
-                      "required": [
-                        "value"
-                      ]
+                      }
                     },
                     "ProductTypeName": {
                       "type": "object",
@@ -342,10 +245,7 @@
                         "value": {
                           "type": "string"
                         }
-                      },
-                      "required": [
-                        "value"
-                      ]
+                      }
                     },
                     "ItemDimensions": {
                       "type": "object",
@@ -359,19 +259,12 @@
                                 "value": {
                                   "type": "string"
                                 }
-                              },
-                              "required": [
-                                "value"
-                              ]
+                              }
                             },
                             "value": {
                               "type": "string"
                             }
-                          },
-                          "required": [
-                            "Units",
-                            "value"
-                          ]
+                          }
                         },
                         "Length": {
                           "type": "object",
@@ -382,19 +275,12 @@
                                 "value": {
                                   "type": "string"
                                 }
-                              },
-                              "required": [
-                                "value"
-                              ]
+                              }
                             },
                             "value": {
                               "type": "string"
                             }
-                          },
-                          "required": [
-                            "Units",
-                            "value"
-                          ]
+                          }
                         },
                         "Height": {
                           "type": "object",
@@ -405,26 +291,14 @@
                                 "value": {
                                   "type": "string"
                                 }
-                              },
-                              "required": [
-                                "value"
-                              ]
+                              }
                             },
                             "value": {
                               "type": "string"
                             }
-                          },
-                          "required": [
-                            "Units",
-                            "value"
-                          ]
+                          }
                         }
-                      },
-                      "required": [
-                        "Width",
-                        "Length",
-                        "Height"
-                      ]
+                      }
                     },
                     "SmallImage": {
                       "type": "object",
@@ -435,10 +309,7 @@
                             "value": {
                               "type": "string"
                             }
-                          },
-                          "required": [
-                            "value"
-                          ]
+                          }
                         },
                         "Width": {
                           "type": "object",
@@ -449,19 +320,12 @@
                                 "value": {
                                   "type": "string"
                                 }
-                              },
-                              "required": [
-                                "value"
-                              ]
+                              }
                             },
                             "value": {
                               "type": "string"
                             }
-                          },
-                          "required": [
-                            "Units",
-                            "value"
-                          ]
+                          }
                         },
                         "Height": {
                           "type": "object",
@@ -472,26 +336,14 @@
                                 "value": {
                                   "type": "string"
                                 }
-                              },
-                              "required": [
-                                "value"
-                              ]
+                              }
                             },
                             "value": {
                               "type": "string"
                             }
-                          },
-                          "required": [
-                            "Units",
-                            "value"
-                          ]
+                          }
                         }
-                      },
-                      "required": [
-                        "URL",
-                        "Width",
-                        "Height"
-                      ]
+                      }
                     },
                     "Title": {
                       "type": "object",
@@ -499,10 +351,7 @@
                         "value": {
                           "type": "string"
                         }
-                      },
-                      "required": [
-                        "value"
-                      ]
+                      }
                     },
                     "Department": {
                       "type": "object",
@@ -510,10 +359,7 @@
                         "value": {
                           "type": "string"
                         }
-                      },
-                      "required": [
-                        "value"
-                      ]
+                      }
                     },
                     "Studio": {
                       "type": "object",
@@ -521,10 +367,7 @@
                         "value": {
                           "type": "string"
                         }
-                      },
-                      "required": [
-                        "value"
-                      ]
+                      }
                     },
                     "Size": {
                       "type": "object",
@@ -532,10 +375,7 @@
                         "value": {
                           "type": "string"
                         }
-                      },
-                      "required": [
-                        "value"
-                      ]
+                      }
                     },
                     "PackageDimensions": {
                       "type": "object",
@@ -549,19 +389,12 @@
                                 "value": {
                                   "type": "string"
                                 }
-                              },
-                              "required": [
-                                "value"
-                              ]
+                              }
                             },
                             "value": {
                               "type": "string"
                             }
-                          },
-                          "required": [
-                            "Units",
-                            "value"
-                          ]
+                          }
                         },
                         "Length": {
                           "type": "object",
@@ -572,19 +405,12 @@
                                 "value": {
                                   "type": "string"
                                 }
-                              },
-                              "required": [
-                                "value"
-                              ]
+                              }
                             },
                             "value": {
                               "type": "string"
                             }
-                          },
-                          "required": [
-                            "Units",
-                            "value"
-                          ]
+                          }
                         },
                         "Weight": {
                           "type": "object",
@@ -595,19 +421,12 @@
                                 "value": {
                                   "type": "string"
                                 }
-                              },
-                              "required": [
-                                "value"
-                              ]
+                              }
                             },
                             "value": {
                               "type": "string"
                             }
-                          },
-                          "required": [
-                            "Units",
-                            "value"
-                          ]
+                          }
                         },
                         "Height": {
                           "type": "object",
@@ -618,27 +437,14 @@
                                 "value": {
                                   "type": "string"
                                 }
-                              },
-                              "required": [
-                                "value"
-                              ]
+                              }
                             },
                             "value": {
                               "type": "string"
                             }
-                          },
-                          "required": [
-                            "Units",
-                            "value"
-                          ]
+                          }
                         }
-                      },
-                      "required": [
-                        "Width",
-                        "Length",
-                        "Weight",
-                        "Height"
-                      ]
+                      }
                     },
                     "Manufacturer": {
                       "type": "object",
@@ -646,53 +452,15 @@
                         "value": {
                           "type": "string"
                         }
-                      },
-                      "required": [
-                        "value"
-                      ]
+                      }
                     }
-                  },
-                  "required": [
-                    "lang",
-                    "HandOrientation",
-                    "IsMemorabilia",
-                    "Color",
-                    "Brand",
-                    "MaterialType",
-                    "Binding",
-                    "Publisher",
-                    "ProductGroup",
-                    "Label",
-                    "IsAutographed",
-                    "PackageQuantity",
-                    "ProductTypeName",
-                    "ItemDimensions",
-                    "SmallImage",
-                    "Title",
-                    "Department",
-                    "Studio",
-                    "Size",
-                    "PackageDimensions",
-                    "Manufacturer"
-                  ]
+                  }
                 }
-              },
-              "required": [
-                "ItemAttributes"
-              ]
+              }
             }
-          },
-          "required": [
-            "Relationships",
-            "Identifiers",
-            "SalesRankings",
-            "AttributeSets"
-          ]
+          }
         }
-      },
-      "required": [
-        "Product"
-      ]
+      }
     },
     "Id": {
       "type": "object",
@@ -700,16 +468,7 @@
         "value": {
           "type": "string"
         }
-      },
-      "required": [
-        "value"
-      ]
+      }
     }
-  },
-  "required": [
-    "status",
-    "IdType",
-    "Products",
-    "Id"
-  ]
+  }
 }
