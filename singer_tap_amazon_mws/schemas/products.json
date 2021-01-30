@@ -1,6 +1,18 @@
 {
   "type": "object",
   "properties": {
+    "Id": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      }
+    }
+  },
     "IdType": {
       "type": "object",
       "properties": {
@@ -591,17 +603,5 @@
           }
         }
       }
-    },
-    "Id": {
-      "type": "object",
-      "properties": {
-        "value": {
-          "type": [
-            "null",
-            "string"
-          ]
-        }
-      }
     }
-  }
 }
