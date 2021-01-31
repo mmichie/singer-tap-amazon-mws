@@ -92,490 +92,451 @@
               "properties": {
                 "SalesRank": {
                   "type": "array",
-                  "items": [
-                    {
-                      "type": "object",
-                      "properties": {
-                        "ProductCategoryId": {
-                          "type": "object",
-                          "properties": {
-                            "value": {
-                              "type": [
-                                "null",
-                                "string"
-                              ]
-                            }
-                          }
-                        },
-                        "Rank": {
-                          "type": "object",
-                          "properties": {
-                            "value": {
-                              "type": [
-                                "null",
-                                "string"
-                              ]
-                            }
-                          }
-                        }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "properties": {
-                        "ProductCategoryId": {
-                          "type": "object",
-                          "properties": {
-                            "value": {
-                              "type": [
-                                "null",
-                                "string"
-                              ]
-                            }
-                          }
-                        },
-                        "Rank": {
-                          "type": "object",
-                          "properties": {
-                            "value": {
-                              "type": [
-                                "null",
-                                "string"
-                              ]
-                            }
-                          }
-                        }
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "ProductCategoryId": {
+                        "type": [
+                          "null",
+                          "string"
+                        ]
+                      },
+                      "Rank": {
+                        "type": [
+                          "null",
+                          "string"
+                        ]
                       }
                     }
-                  ]
+                  }
                 }
-              }
-            },
-            "AttributeSets": {
-              "type": "object",
-              "properties": {
-                "ItemAttributes": {
-                  "type": "object",
-                  "properties": {
-                    "lang": {
-                      "type": "object",
-                      "properties": {
-                        "value": {
-                          "type": [
-                            "null",
-                            "string"
-                          ]
+              },
+              "AttributeSets": {
+                "type": "object",
+                "properties": {
+                  "ItemAttributes": {
+                    "type": "object",
+                    "properties": {
+                      "lang": {
+                        "type": "object",
+                        "properties": {
+                          "value": {
+                            "type": [
+                              "null",
+                              "string"
+                            ]
+                          }
                         }
-                      }
-                    },
-                    "HandOrientation": {
-                      "type": "object",
-                      "properties": {
-                        "value": {
-                          "type": [
-                            "null",
-                            "string"
-                          ]
+                      },
+                      "HandOrientation": {
+                        "type": "object",
+                        "properties": {
+                          "value": {
+                            "type": [
+                              "null",
+                              "string"
+                            ]
+                          }
                         }
-                      }
-                    },
-                    "IsMemorabilia": {
-                      "type": "object",
-                      "properties": {
-                        "value": {
-                          "type": [
-                            "null",
-                            "string"
-                          ]
+                      },
+                      "IsMemorabilia": {
+                        "type": "object",
+                        "properties": {
+                          "value": {
+                            "type": [
+                              "null",
+                              "string"
+                            ]
+                          }
                         }
-                      }
-                    },
-                    "Color": {
-                      "type": "object",
-                      "properties": {
-                        "value": {
-                          "type": [
-                            "null",
-                            "string"
-                          ]
+                      },
+                      "Color": {
+                        "type": "object",
+                        "properties": {
+                          "value": {
+                            "type": [
+                              "null",
+                              "string"
+                            ]
+                          }
                         }
-                      }
-                    },
-                    "Brand": {
-                      "type": "object",
-                      "properties": {
-                        "value": {
-                          "type": [
-                            "null",
-                            "string"
-                          ]
+                      },
+                      "Brand": {
+                        "type": "object",
+                        "properties": {
+                          "value": {
+                            "type": [
+                              "null",
+                              "string"
+                            ]
+                          }
                         }
-                      }
-                    },
-                    "MaterialType": {
-                      "type": "object",
-                      "properties": {
-                        "value": {
-                          "type": [
-                            "null",
-                            "string"
-                          ]
+                      },
+                      "MaterialType": {
+                        "type": "object",
+                        "properties": {
+                          "value": {
+                            "type": [
+                              "null",
+                              "string"
+                            ]
+                          }
                         }
-                      }
-                    },
-                    "Binding": {
-                      "type": "object",
-                      "properties": {
-                        "value": {
-                          "type": [
-                            "null",
-                            "string"
-                          ]
+                      },
+                      "Binding": {
+                        "type": "object",
+                        "properties": {
+                          "value": {
+                            "type": [
+                              "null",
+                              "string"
+                            ]
+                          }
                         }
-                      }
-                    },
-                    "Publisher": {
-                      "type": "object",
-                      "properties": {
-                        "value": {
-                          "type": [
-                            "null",
-                            "string"
-                          ]
+                      },
+                      "Publisher": {
+                        "type": "object",
+                        "properties": {
+                          "value": {
+                            "type": [
+                              "null",
+                              "string"
+                            ]
+                          }
                         }
-                      }
-                    },
-                    "ProductGroup": {
-                      "type": "object",
-                      "properties": {
-                        "value": {
-                          "type": [
-                            "null",
-                            "string"
-                          ]
+                      },
+                      "ProductGroup": {
+                        "type": "object",
+                        "properties": {
+                          "value": {
+                            "type": [
+                              "null",
+                              "string"
+                            ]
+                          }
                         }
-                      }
-                    },
-                    "Label": {
-                      "type": "object",
-                      "properties": {
-                        "value": {
-                          "type": [
-                            "null",
-                            "string"
-                          ]
+                      },
+                      "Label": {
+                        "type": "object",
+                        "properties": {
+                          "value": {
+                            "type": [
+                              "null",
+                              "string"
+                            ]
+                          }
                         }
-                      }
-                    },
-                    "IsAutographed": {
-                      "type": "object",
-                      "properties": {
-                        "value": {
-                          "type": [
-                            "null",
-                            "string"
-                          ]
+                      },
+                      "IsAutographed": {
+                        "type": "object",
+                        "properties": {
+                          "value": {
+                            "type": [
+                              "null",
+                              "string"
+                            ]
+                          }
                         }
-                      }
-                    },
-                    "PackageQuantity": {
-                      "type": "object",
-                      "properties": {
-                        "value": {
-                          "type": [
-                            "null",
-                            "string"
-                          ]
+                      },
+                      "PackageQuantity": {
+                        "type": "object",
+                        "properties": {
+                          "value": {
+                            "type": [
+                              "null",
+                              "string"
+                            ]
+                          }
                         }
-                      }
-                    },
-                    "ProductTypeName": {
-                      "type": "object",
-                      "properties": {
-                        "value": {
-                          "type": [
-                            "null",
-                            "string"
-                          ]
+                      },
+                      "ProductTypeName": {
+                        "type": "object",
+                        "properties": {
+                          "value": {
+                            "type": [
+                              "null",
+                              "string"
+                            ]
+                          }
                         }
-                      }
-                    },
-                    "ItemDimensions": {
-                      "type": "object",
-                      "properties": {
-                        "Width": {
-                          "type": "object",
-                          "properties": {
-                            "Units": {
-                              "type": "object",
-                              "properties": {
-                                "value": {
-                                  "type": [
-                                    "null",
-                                    "string"
-                                  ]
+                      },
+                      "ItemDimensions": {
+                        "type": "object",
+                        "properties": {
+                          "Width": {
+                            "type": "object",
+                            "properties": {
+                              "Units": {
+                                "type": "object",
+                                "properties": {
+                                  "value": {
+                                    "type": [
+                                      "null",
+                                      "string"
+                                    ]
+                                  }
                                 }
+                              },
+                              "value": {
+                                "type": [
+                                  "null",
+                                  "string"
+                                ]
                               }
-                            },
-                            "value": {
-                              "type": [
-                                "null",
-                                "string"
-                              ]
                             }
-                          }
-                        },
-                        "Length": {
-                          "type": "object",
-                          "properties": {
-                            "Units": {
-                              "type": "object",
-                              "properties": {
-                                "value": {
-                                  "type": [
-                                    "null",
-                                    "string"
-                                  ]
+                          },
+                          "Length": {
+                            "type": "object",
+                            "properties": {
+                              "Units": {
+                                "type": "object",
+                                "properties": {
+                                  "value": {
+                                    "type": [
+                                      "null",
+                                      "string"
+                                    ]
+                                  }
                                 }
+                              },
+                              "value": {
+                                "type": [
+                                  "null",
+                                  "string"
+                                ]
                               }
-                            },
-                            "value": {
-                              "type": [
-                                "null",
-                                "string"
-                              ]
                             }
-                          }
-                        },
-                        "Height": {
-                          "type": "object",
-                          "properties": {
-                            "Units": {
-                              "type": "object",
-                              "properties": {
-                                "value": {
-                                  "type": [
-                                    "null",
-                                    "string"
-                                  ]
+                          },
+                          "Height": {
+                            "type": "object",
+                            "properties": {
+                              "Units": {
+                                "type": "object",
+                                "properties": {
+                                  "value": {
+                                    "type": [
+                                      "null",
+                                      "string"
+                                    ]
+                                  }
                                 }
+                              },
+                              "value": {
+                                "type": [
+                                  "null",
+                                  "string"
+                                ]
                               }
-                            },
-                            "value": {
-                              "type": [
-                                "null",
-                                "string"
-                              ]
                             }
                           }
                         }
-                      }
-                    },
-                    "SmallImage": {
-                      "type": "object",
-                      "properties": {
-                        "URL": {
-                          "type": "object",
-                          "properties": {
-                            "value": {
-                              "type": [
-                                "null",
-                                "string"
-                              ]
-                            }
-                          }
-                        },
-                        "Width": {
-                          "type": "object",
-                          "properties": {
-                            "Units": {
-                              "type": "object",
-                              "properties": {
-                                "value": {
-                                  "type": [
-                                    "null",
-                                    "string"
-                                  ]
-                                }
+                      },
+                      "SmallImage": {
+                        "type": "object",
+                        "properties": {
+                          "URL": {
+                            "type": "object",
+                            "properties": {
+                              "value": {
+                                "type": [
+                                  "null",
+                                  "string"
+                                ]
                               }
-                            },
-                            "value": {
-                              "type": [
-                                "null",
-                                "string"
-                              ]
                             }
-                          }
-                        },
-                        "Height": {
-                          "type": "object",
-                          "properties": {
-                            "Units": {
-                              "type": "object",
-                              "properties": {
-                                "value": {
-                                  "type": [
-                                    "null",
-                                    "string"
-                                  ]
+                          },
+                          "Width": {
+                            "type": "object",
+                            "properties": {
+                              "Units": {
+                                "type": "object",
+                                "properties": {
+                                  "value": {
+                                    "type": [
+                                      "null",
+                                      "string"
+                                    ]
+                                  }
                                 }
+                              },
+                              "value": {
+                                "type": [
+                                  "null",
+                                  "string"
+                                ]
                               }
-                            },
-                            "value": {
-                              "type": [
-                                "null",
-                                "string"
-                              ]
+                            }
+                          },
+                          "Height": {
+                            "type": "object",
+                            "properties": {
+                              "Units": {
+                                "type": "object",
+                                "properties": {
+                                  "value": {
+                                    "type": [
+                                      "null",
+                                      "string"
+                                    ]
+                                  }
+                                }
+                              },
+                              "value": {
+                                "type": [
+                                  "null",
+                                  "string"
+                                ]
+                              }
                             }
                           }
                         }
-                      }
-                    },
-                    "Title": {
-                      "type": "object",
-                      "properties": {
-                        "value": {
-                          "type": [
-                            "null",
-                            "string"
-                          ]
-                        }
-                      }
-                    },
-                    "Department": {
-                      "type": "object",
-                      "properties": {
-                        "value": {
-                          "type": [
-                            "null",
-                            "string"
-                          ]
-                        }
-                      }
-                    },
-                    "Studio": {
-                      "type": "object",
-                      "properties": {
-                        "value": {
-                          "type": [
-                            "null",
-                            "string"
-                          ]
-                        }
-                      }
-                    },
-                    "Size": {
-                      "type": "object",
-                      "properties": {
-                        "value": {
-                          "type": [
-                            "null",
-                            "string"
-                          ]
-                        }
-                      }
-                    },
-                    "PackageDimensions": {
-                      "type": "object",
-                      "properties": {
-                        "Width": {
-                          "type": "object",
-                          "properties": {
-                            "Units": {
-                              "type": "object",
-                              "properties": {
-                                "value": {
-                                  "type": [
-                                    "null",
-                                    "string"
-                                  ]
-                                }
-                              }
-                            },
-                            "value": {
-                              "type": [
-                                "null",
-                                "string"
-                              ]
-                            }
-                          }
-                        },
-                        "Length": {
-                          "type": "object",
-                          "properties": {
-                            "Units": {
-                              "type": "object",
-                              "properties": {
-                                "value": {
-                                  "type": [
-                                    "null",
-                                    "string"
-                                  ]
-                                }
-                              }
-                            },
-                            "value": {
-                              "type": [
-                                "null",
-                                "string"
-                              ]
-                            }
-                          }
-                        },
-                        "Weight": {
-                          "type": "object",
-                          "properties": {
-                            "Units": {
-                              "type": "object",
-                              "properties": {
-                                "value": {
-                                  "type": [
-                                    "null",
-                                    "string"
-                                  ]
-                                }
-                              }
-                            },
-                            "value": {
-                              "type": [
-                                "null",
-                                "string"
-                              ]
-                            }
-                          }
-                        },
-                        "Height": {
-                          "type": "object",
-                          "properties": {
-                            "Units": {
-                              "type": "object",
-                              "properties": {
-                                "value": {
-                                  "type": [
-                                    "null",
-                                    "string"
-                                  ]
-                                }
-                              }
-                            },
-                            "value": {
-                              "type": [
-                                "null",
-                                "string"
-                              ]
-                            }
+                      },
+                      "Title": {
+                        "type": "object",
+                        "properties": {
+                          "value": {
+                            "type": [
+                              "null",
+                              "string"
+                            ]
                           }
                         }
-                      }
-                    },
-                    "Manufacturer": {
-                      "type": "object",
-                      "properties": {
-                        "value": {
-                          "type": [
-                            "null",
-                            "string"
-                          ]
+                      },
+                      "Department": {
+                        "type": "object",
+                        "properties": {
+                          "value": {
+                            "type": [
+                              "null",
+                              "string"
+                            ]
+                          }
+                        }
+                      },
+                      "Studio": {
+                        "type": "object",
+                        "properties": {
+                          "value": {
+                            "type": [
+                              "null",
+                              "string"
+                            ]
+                          }
+                        }
+                      },
+                      "Size": {
+                        "type": "object",
+                        "properties": {
+                          "value": {
+                            "type": [
+                              "null",
+                              "string"
+                            ]
+                          }
+                        }
+                      },
+                      "PackageDimensions": {
+                        "type": "object",
+                        "properties": {
+                          "Width": {
+                            "type": "object",
+                            "properties": {
+                              "Units": {
+                                "type": "object",
+                                "properties": {
+                                  "value": {
+                                    "type": [
+                                      "null",
+                                      "string"
+                                    ]
+                                  }
+                                }
+                              },
+                              "value": {
+                                "type": [
+                                  "null",
+                                  "string"
+                                ]
+                              }
+                            }
+                          },
+                          "Length": {
+                            "type": "object",
+                            "properties": {
+                              "Units": {
+                                "type": "object",
+                                "properties": {
+                                  "value": {
+                                    "type": [
+                                      "null",
+                                      "string"
+                                    ]
+                                  }
+                                }
+                              },
+                              "value": {
+                                "type": [
+                                  "null",
+                                  "string"
+                                ]
+                              }
+                            }
+                          },
+                          "Weight": {
+                            "type": "object",
+                            "properties": {
+                              "Units": {
+                                "type": "object",
+                                "properties": {
+                                  "value": {
+                                    "type": [
+                                      "null",
+                                      "string"
+                                    ]
+                                  }
+                                }
+                              },
+                              "value": {
+                                "type": [
+                                  "null",
+                                  "string"
+                                ]
+                              }
+                            }
+                          },
+                          "Height": {
+                            "type": "object",
+                            "properties": {
+                              "Units": {
+                                "type": "object",
+                                "properties": {
+                                  "value": {
+                                    "type": [
+                                      "null",
+                                      "string"
+                                    ]
+                                  }
+                                }
+                              },
+                              "value": {
+                                "type": [
+                                  "null",
+                                  "string"
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "Manufacturer": {
+                        "type": "object",
+                        "properties": {
+                          "value": {
+                            "type": [
+                              "null",
+                              "string"
+                            ]
+                          }
                         }
                       }
                     }
