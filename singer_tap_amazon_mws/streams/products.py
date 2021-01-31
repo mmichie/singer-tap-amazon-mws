@@ -34,7 +34,7 @@ class ProductStream(InventoryIterationStream):
             'id': pluck(r, ['Id', 'value']),
             'IdType': pluck(r, ['IdType', 'value']),
 
-             # Structs
+            # Structs
             "Products": {
                 "Product": {
                     "Identifiers": {
@@ -46,7 +46,6 @@ class ProductStream(InventoryIterationStream):
                       }
                     }
                 }
-                #'Binding': pluck(r, ['Products', 'Product', 'AttributeSets', 'ItemAttributes', 'Binding', 'value']),
             }
         }
         LOGGER.info("returning %s" % result)
