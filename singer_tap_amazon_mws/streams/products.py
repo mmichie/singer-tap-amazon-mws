@@ -35,16 +35,14 @@ class ProductStream(InventoryIterationStream):
             'IdType': pluck(r, ['IdType', 'value']),
 
             # Structs
-            "Products": {
-                "Product": {
-                    "Identifiers": {
-                        "MarketplaceASIN": {
-                            "MarketplaceId": {
-                                "MarketplaceId": pluck(r, ['Products', 'Product', 'Identifiers', 'MarketplaceASIN', 'MarketplaceId', 'value']),
-                                "ASIN": pluck(r, ['Products', 'Product', 'Identifiers', 'MarketplaceASIN', 'ASIN', 'value']),
-                             }
-                      }
-                    }
+            "Product": {
+                "Identifiers": {
+                    "MarketplaceASIN": {
+                        "MarketplaceId": {
+                            "MarketplaceId": pluck(r, ['Product', 'Identifiers', 'MarketplaceASIN', 'MarketplaceId', 'value']),
+                            "ASIN": pluck(r, ['Product', 'Identifiers', 'MarketplaceASIN', 'ASIN', 'value']),
+                         }
+                  }
                 }
             }
         }
